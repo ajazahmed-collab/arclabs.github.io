@@ -3,68 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARC Labs | Propulsion & Networks</title>
+    <title>ARC Labs | Propelling the Future</title>
     <style>
-        /* Define the custom Space/Star Background for ARC Labs */
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-            /* Gradient for atmospheric/orbital blend */
-            background: linear-gradient(180deg, #10192e 0%, #171c26 50%, #0d121c 100%);
-            
-            /* Custom star field generated via CSS box-shadow */
-            /* This avoids needing to host a large 'star' image. */
-            /* Small stars (distance/density) */
-            box-shadow: inset 0 0 100px rgba(0,0,0,0.8),
-                100px 100px 1px 0px rgba(255, 255, 255, 0.4),
-                300px 400px 1px 1px rgba(255, 255, 255, 0.3),
-                500px 150px 1px 1px rgba(255, 255, 255, 0.3),
-                -100px -300px 1px 0px rgba(255, 255, 255, 0.4),
-                -400px -100px 1px 1px rgba(255, 255, 255, 0.3),
-                -150px -500px 1px 1px rgba(255, 255, 255, 0.3);
-            
-            /* Add larger 'sparkle' stars to simulate nearby bodies */
-            &::after {
-                content: "";
-                position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-                z-index: -1;
-                box-shadow: 
-                200px 200px 3px 1px rgba(255, 255, 255, 0.5),
-                -200px -200px 3px 1px rgba(255, 255, 255, 0.5),
-                600px 300px 3px 2px rgba(255, 255, 255, 0.4),
-                -600px -300px 3px 2px rgba(255, 255, 255, 0.4);
-                opacity: 0.6;
-            }
-
+            /* High-resolution Space & Stars Background */
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), 
+                        url('https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
             background-attachment: fixed;
-            color: #ffffff; /* Clean white text for readability */
+            color: #ffffff;
             text-align: center; 
             padding: 50px 20px; 
             margin: 0; 
         }
         
-        /* Your Logo Styling - Blending Method */
-        .logo-container {
+        /* Logo Box to keep your logo clean and visible */
+        .logo-box {
+            background: #ffffff;
             display: inline-block;
-            background: #ffffff; /* Define the logo's native color */
-            padding: 15px; 
-            border-radius: 12px; 
+            padding: 15px;
+            border-radius: 12px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Strong shadow for depth */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
         }
 
         .logo { 
-            max-width: 200px; 
-            margin: 0 auto; 
+            max-width: 180px; 
             display: block; 
         }
 
-        /* Hero Title - coordination of color with the deep sky */
         .hero-title { 
             font-size: 2.6rem; 
             font-weight: 800; 
             letter-spacing: -1px; 
-            /* Subtle blue gradient overlay on text */
-            background: linear-gradient(90deg, #ffffff, #a3c3d9);
+            background: linear-gradient(180deg, #ffffff, #94a3b8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 10px; 
@@ -73,20 +47,18 @@
 
         .tagline { 
             font-size: 1rem; 
-            color: #94a3b8; /* Muted Slate */
+            color: #94a3b8; 
             margin-bottom: 40px; 
-            letter-spacing: 1px; 
             text-transform: uppercase; 
-            font-weight: 400; 
+            letter-spacing: 2px;
         }
         
-        /* Launching Soon Badge */
         .status-badge { 
             display: inline-block; 
-            background: rgba(148, 163, 184, 0.15); 
-            border: 1px solid rgba(148, 163, 184, 0.4); 
-            color: #94a3b8; 
-            padding: 6px 16px; 
+            background: rgba(78, 204, 163, 0.1); 
+            border: 1px solid #4ecca3; 
+            color: #4ecca3; 
+            padding: 8px 20px; 
             border-radius: 50px; 
             font-size: 0.8rem; 
             font-weight: bold; 
@@ -101,22 +73,20 @@
             margin: 0 auto; 
         }
 
-        /* Achievement Badges - adapted for dark background */
         .badge { 
-            background: rgba(16, 25, 46, 0.8); /* Translucent dark navy */
-            border: 1px solid rgba(31, 41, 58, 0.6); 
-            padding: 15px; 
+            background: rgba(30, 41, 59, 0.8); 
+            border: 1px solid rgba(255,255,255,0.1); 
+            padding: 18px; 
             border-radius: 12px; 
-            font-size: 0.9rem; 
-            color: #cbd5e1; 
+            font-size: 0.95rem; 
+            color: #e2e8f0; 
             text-align: left;
-            box-shadow: 0 4px 10px -1px rgb(0 0 0 / 0.5);
+            backdrop-filter: blur(10px);
         }
         
         .company-info { 
             font-size: 0.75rem; 
-            color: #475569; 
-            letter-spacing: 1px; 
+            color: #64748b; 
             margin-top: 60px; 
             line-height: 1.8; 
             text-transform: uppercase; 
@@ -124,7 +94,7 @@
 
         .contact { 
             margin-top: 30px; 
-            color: #60a5fa; /* Blue Link adapted for dark background */
+            color: #4ecca3; 
             font-size: 0.9rem; 
             text-decoration: none; 
             display: block; 
@@ -134,18 +104,19 @@
         .copyright { 
             margin-top: 40px; 
             font-size: 0.7rem; 
-            color: #334155; 
-            border-top: 1px solid rgba(26, 28, 35, 0.5); 
+            color: #475569; 
+            border-top: 1px solid rgba(255,255,255,0.1); 
             padding-top: 20px; 
         }
     </style>
 </head>
 <body>
 
-    <div class="logo-container">
-        <img src="[PASTE_YOUR_RAW_LOGO_URL_HERE]" alt="ARC Labs Logo" class="logo">
+    <div class="logo-box">
+        <img src="https://raw.githubusercontent.com/ajazahmed-collab/ajazahmed-collab.github.io/main/1775665361593.png" alt="ARC Labs Logo" class="logo">
     </div>
 
+    <br>
     <div class="status-badge">🚀 LAUNCHING SOON</div>
     
     <div class="hero-title">Propelling the Future <br>of Aerospace</div>
@@ -158,7 +129,7 @@
 
     <div class="company-info">
         AJAZ RESEARCH AND DEVELOPMENT CENTRE PRIVATE LIMITED<br>
-        REGISTERED OFFICE: RAICHUR, KARNATAKA
+                        RAICHUR, KARNATAKA
     </div>
 
     <a href="mailto:contact@arclabs.co.in" class="contact">contact@arclabs.co.in</a>
