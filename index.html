@@ -5,109 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARC Labs | Propelling the Future</title>
     <style>
-        /* Define the Space/Sky Mix Background */
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-            /* Gradient: deep atmospheric blue transitioning to deep space slate */
-            background: linear-gradient(180deg, #10192e 0%, #171c26 50%, #0d121c 100%);
-            color: #ffffff; /* Clean white text for readability */
+            /* Space & Sky Gradient Mix */
+            background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            background-attachment: fixed;
+            color: #ffffff;
             text-align: center; 
-            padding: 50px 20px; 
+            padding: 40px 20px; 
             margin: 0; 
         }
         
-        /* Your Logo Styling */
-        .logo-container {
-            /* This ensures the logo, even with its grey background, feels integrated */
+        /* Logo Container to blend your light-background logo into the dark theme */
+        .logo-box {
+            background: #ffffff;
             display: inline-block;
-            background: #ffffff; /* We must define the logo's native color for this method */
-            padding: 15px; 
-            border-radius: 12px; 
-            margin-bottom: 30px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
         }
 
         .logo { 
-            max-width: 200px; 
-            margin: 0 auto; 
+            max-width: 180px; 
+            height: auto;
             display: block; 
         }
 
-        /* Hero Title - coordination of color */
-        .hero-title { 
-            font-size: 2.6rem; 
-            font-weight: 800; 
-            letter-spacing: -1px; 
-            /* Subtle blue gradient overlay on text */
-            background: linear-gradient(90deg, #ffffff, #a3c3d9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 10px; 
-            line-height: 1.1; 
-        }
-
-        .tagline { 
-            font-size: 1rem; 
-            color: #94a3b8; /* Muted Slate */
-            margin-bottom: 40px; 
-            letter-spacing: 1px; 
-            text-transform: uppercase; 
-            font-weight: 400; 
-        }
-        
-        /* Launching Soon Badge */
         .status-badge { 
             display: inline-block; 
-            background: rgba(148, 163, 184, 0.1); 
-            border: 1px solid rgba(148, 163, 184, 0.3); 
-            color: #94a3b8; 
+            background: rgba(78, 204, 163, 0.15); 
+            border: 1px solid #4ecca3; 
+            color: #4ecca3; 
             padding: 6px 16px; 
             border-radius: 50px; 
             font-size: 0.8rem; 
             font-weight: bold; 
             margin-bottom: 30px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-title { 
+            font-size: 2.4rem; 
+            font-weight: 800; 
+            line-height: 1.1;
+            margin-bottom: 15px;
+            background: linear-gradient(to bottom, #ffffff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline { 
+            font-size: 1rem; 
+            color: #94a3b8; 
+            margin-bottom: 40px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
         }
         
         .card-container { 
             display: flex; 
             flex-direction: column; 
             gap: 12px; 
-            max-width: 400px; 
+            max-width: 420px; 
             margin: 0 auto; 
         }
 
-        /* Achievement Badges - adapted for dark background */
         .badge { 
-            background: rgba(26, 32, 44, 0.6); /* Translucent dark navy */
-            border: 1px solid #1f293a; 
-            padding: 15px; 
+            background: rgba(30, 41, 59, 0.7); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            padding: 18px; 
             border-radius: 12px; 
-            font-size: 0.9rem; 
-            color: #cbd5e1; 
+            font-size: 0.95rem; 
+            color: #e2e8f0; 
             text-align: left;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            backdrop-filter: blur(5px);
         }
         
         .company-info { 
             font-size: 0.75rem; 
             color: #64748b; 
-            letter-spacing: 1px; 
             margin-top: 60px; 
             line-height: 1.8; 
-            text-transform: uppercase; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .contact { 
-            margin-top: 30px; 
-            color: #60a5fa; /* Blue Link adapted for dark background */
-            font-size: 0.9rem; 
+            margin-top: 25px; 
+            color: #4ecca3; 
             text-decoration: none; 
             display: block; 
-            font-weight: 600; 
+            font-weight: 600;
+            font-size: 1rem;
         }
 
         .copyright { 
             margin-top: 40px; 
+            font-size: 0.7rem; 
+            color: #475569; 
+            border-top: 1px solid rgba(255,255,255,0.05); 
+            padding-top: 20px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-box">
+        <img src="https://raw.githubusercontent.com/ajazahmed-collab/[YOUR_REPO_NAME]/main/1775665361593.png" alt="ARC Labs Logo" class="logo">
+    </div>
+
+    <br>
+    <div class="status-badge">🚀 Launching Soon</div>
+    
+    <h1 class="hero-title">Propelling the Future <br>of Aerospace</h1>
+    <p class="tagline">Hybrid Propulsion & Decentralized Networks</p>
+
+    <div class="card-container">
+        <div class="badge">✨ Hello Tomorrow Deep Tech Pioneer 2026</div>
+        <div class="badge">🏆 Viasat Space for Good Finalist 2025</div>
+    </div>
+
+    <div class="company-info">
+        AJAZ RESEARCH AND DEVELOPMENT CENTRE PRIVATE LIMITED<br>
+        REGISTERED OFFICE: RAICHUR, KARNATAKA
+    </div>
+
+    <a href="mailto:contact@arclabs.co.in" class="contact">contact@arclabs.co.in</a>
+
+    <div class="copyright">
+        &copy; 2026 ARC Labs. All rights reserved.
+    </div>
+
+</body>
+</html>
             font-size: 0.7rem; 
             color: #475569; 
             border-top: 1px solid #1a1c23; 
