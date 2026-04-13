@@ -7,37 +7,15 @@
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-            /* Deep Space Gradient */
-            background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-            /* Layered Star Field using multiple Box Shadows */
-            background-image: 
-                radial-gradient(1px 1px at 20px 30px, #fff, rgba(0,0,0,0)),
-                radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
-                radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
-                radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
-                radial-gradient(1px 1px at 130px 80px, #fff, rgba(0,0,0,0)),
-                radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
-            background-repeat: repeat;
-            background-size: 200px 200px;
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+                        url('https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
             background-attachment: fixed;
             color: #ffffff;
             text-align: center; 
             padding: 50px 20px; 
             margin: 0; 
-            overflow-x: hidden;
-        }
-
-        /* Adding a second layer of smaller, denser stars */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-image: 
-                radial-gradient(1px 1px at 10px 10px, #fff, rgba(0,0,0,0)),
-                radial-gradient(1px 1px at 150px 150px, #fff, rgba(0,0,0,0));
-            background-size: 100px 100px;
-            opacity: 0.3;
-            z-index: -1;
         }
         
         .logo-box {
@@ -46,7 +24,7 @@
             padding: 15px;
             border-radius: 12px;
             margin-bottom: 30px;
-            box-shadow: 0 0 20px rgba(78, 204, 163, 0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
         }
 
         .logo { 
@@ -57,12 +35,12 @@
         /* Traffic Light Yellow Blinking Badge */
         .status-badge { 
             display: inline-block; 
-            color: #FFCC00; 
-            font-size: 1.8rem; 
+            color: #FFCC00; /* Traffic Light Yellow */
+            font-size: 1.8rem; /* Large size */
             font-weight: 900; 
             margin-bottom: 35px; 
             letter-spacing: 1px;
-            animation: traffic-blink 1.2s infinite; 
+            animation: traffic-blink 1.2s infinite; /* Faster, urgent blink */
         }
 
         @keyframes traffic-blink {
@@ -75,7 +53,7 @@
             font-size: 2.6rem; 
             font-weight: 800; 
             letter-spacing: -1px; 
-            background: linear-gradient(180deg, #ffffff, #4ecca3);
+            background: linear-gradient(180deg, #ffffff, #94a3b8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 10px; 
@@ -99,8 +77,8 @@
         }
 
         .badge { 
-            background: rgba(255, 255, 255, 0.05); 
-            border: 1px solid rgba(255, 255, 255, 0.1); 
+            background: rgba(30, 41, 59, 0.85); 
+            border: 1px solid rgba(255,255,255,0.1); 
             padding: 18px; 
             border-radius: 12px; 
             font-size: 0.95rem; 
@@ -119,7 +97,7 @@
 
         .contact { 
             margin-top: 30px; 
-            color: #4ecca3; 
+            color: #1B2735; 
             font-size: 1rem; 
             text-decoration: none; 
             display: block; 
@@ -154,7 +132,7 @@
 
     <div class="company-info">
         AJAZ RESEARCH AND DEVELOPMENT CENTRE PRIVATE LIMITED<br>
-        REGISTERED OFFICE: RAICHUR, KARNATAKA
+                           RAICHUR, KARNATAKA
     </div>
 
     <a href="mailto:contact@arclabs.co.in" class="contact">contact@arclabs.co.in</a>
