@@ -108,6 +108,30 @@
             text-align: left;
             backdrop-filter: blur(10px);
         }
+
+        /* Styled Github Link Button */
+        .github-link {
+            background: linear-gradient(135deg, #24292e 0%, #040404 100%);
+            border: 1px solid rgba(78, 204, 163, 0.4);
+            padding: 18px;
+            border-radius: 12px;
+            font-size: 1rem;
+            color: #ffffff;
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .github-link:hover {
+            border-color: #4ecca3;
+            box-shadow: 0 0 15px rgba(78, 204, 163, 0.4);
+            transform: translateY(-2px);
+        }
         
         .company-info { 
             font-size: 0.75rem; 
@@ -118,7 +142,7 @@
         }
 
         .contact { 
-            margin-top: 30px; 
+            margin-top: 15px; 
             color: #4ecca3; 
             font-size: 1rem; 
             text-decoration: none; 
@@ -150,10 +174,16 @@
     <div class="card-container">
         <div class="badge">✨ Hello Tomorrow Deep Tech Pioneer 2026</div>
         <div class="badge">🏆 Viasat Space for Good Finalist 2025</div>
+        
+        <!-- NEW GITHUB LINK COMPONENT (Change '#' to your actual link) -->
+        <a href="https://github.com/your-username-or-organization" target="_blank" class="github-link">
+            🐙 Visit Our GitHub Repository →
+        </a>
     </div>
 
+    <!-- Fixed the missing '>' bracket here -->
     <div class="company-info">
-        AJAZ RESEARCH AND DEVELOPMENT CENTRE PRIVATE LIMITED<br
+        AJAZ RESEARCH AND DEVELOPMENT CENTRE PRIVATE LIMITED<br>
     </div>
 
     <a href="mailto:contact@arclabs.co.in" class="contact">contact@arclabs.co.in</a>
